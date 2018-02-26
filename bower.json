@@ -1,0 +1,21 @@
+{
+  "name": "todo-app",
+  "version": "0.0.0",
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "firebase": "^2.4.1"
+  }
+}

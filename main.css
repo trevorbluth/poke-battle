@@ -1,0 +1,519 @@
+/* RESET */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: Verdana;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* PHONE (DEFAULT) */
+
+/*-----Prevents iPhone from resizing in landscape mode -----*/
+html {-webkit-text-size-adjust: none; }
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*-----BODY -----*/
+/*-----BODY -----*/
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	background-color: #646464;
+}
+
+
+/*-----CONTAINER -----*/
+#container {
+	background-color: #393939;   /*nav background color*/
+	min-width: 320px;
+	max-width: 1140px;
+	overflow: hidden;
+}
+
+/*-----HEADER -----*/
+
+header {
+	border-bottom: solid #1ED7DB 6px;
+}
+
+header img.headerimage {
+  display: block;
+  float: right;
+  width:20%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+header a:hover img {
+	transition: ease-in .25s;
+	opacity: .7;
+}
+
+header hgroup {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	padding: 0 1.3em;
+	background-color: #393939;
+
+}
+
+header h1 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 2.5em;
+	padding-top: .5em;
+	color: #F7F7F7;
+}
+
+header h2 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 2em;
+	padding: .3em 0 .6em 0;
+	color: #1ED7DB;
+}
+
+
+
+
+/*-----CONTENT -----*/
+#content {
+	min-height: 30em;
+	background-color: white;
+}
+
+#content h1 {
+	font-family: 'Oswald', sans-serif;
+	margin: .3em 2% 0 2%;
+	font-size: 1.5em;
+	color: #1ED7DB;
+}
+#content p {
+	padding: .5em;
+	line-height: 120%;
+}
+
+#content h3 {
+	text-align: center;
+	font-family: 'VT323';
+	font-size:1.5em;
+	margin-top: 1em;
+}
+
+div.trainerdiv {
+	width: 22%;	
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-top: 8%;
+	float: left;
+	position: relative;
+	left: 0;
+	top: 0;
+}
+
+img.trainer {
+	width: 100%;
+	transition: 1s ease-in-out;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+img.trainerslide {
+	width: 115%;
+	position: absolute;
+	left: -300px;
+	top: 10px;
+	-webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+div.pokemondiv {
+	width: 22%;
+	min-height: 132px;
+	margin-right: 2%;
+	margin-top: 2%;
+	float: left;
+}
+
+ .pokemon-image{
+	width:100%;
+	display: none;
+ }
+
+div.avengerdiv {
+	width: 22%;
+	margin-right: 2%;
+	margin-top: 2%;
+	float: left;
+}
+
+ .marvel-image{
+	 width:100%;
+	 display: none;
+ }
+
+
+div.standiv {
+	width: 22%;
+	margin-right: 2%;
+	margin-top: 4%;
+	margin-bottom: 8%;
+	float: left;
+	position: relative;
+}
+
+img.stan {
+	width: 100%;
+	transition: 1s ease-in-out;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+img.stanslide {
+	width: 80%;
+	position: absolute;
+	left: 300px;
+	top: -20px;
+	-webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;	
+}
+
+div.textdiv {
+	width: 96%;
+	clear: both;	
+	display: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+	color: lightgrey;
+}
+
+a:hover {
+	color: white;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+ input.button {
+	color:white;
+	padding: 1em;
+	font-family: 'Oswald', sans-serif;
+	font-size: 18px;
+	background-color:#393939;
+	border-radius: 25px;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	}
+
+	input.button:hover {
+		color:#EC3333;
+		transition: ease 1s;
+	}
+div #buttonarea {
+	text-align:center;
+	clear: both;
+}
+
+
+
+
+/*----- FOOTER -----*/
+footer {
+	clear: both;
+	text-align: center;
+	background-color: #393939;
+	color: #1ED7DB;
+	padding: 1em 0;
+	font-size: .75em;
+}
+
+footer a p {
+	color: #F7F7F7;
+	font-size: 1.3em;
+}
+
+footer a:hover p {
+	color: white;
+	opacity: .8;
+}
+
+footer p {
+	padding-top: .3em;
+}
+
+
+/*----- OTHER -----*/
+.KeepOpen {
+	clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*TABLET*/
+
+@media only screen and (min-width: 601px) {
+  /*-----HEADER -----*/
+
+header img.headerimage {
+	width:15%;
+}
+  /*-----NAVigation -----*/
+  nav {
+    background-color: #b64926;
+  }
+
+
+/*-----CONTAINER -----*/
+	#container {}
+
+
+
+/*-----HEADER -----*/
+header h1 {
+
+}
+
+
+
+/*-----NAVigation -----*/
+nav {
+	background-color: #b64926;
+}
+
+
+/*-----IMAGES -----*/
+
+/*-----CONTENT -----*/
+
+  div.pokemondiv {
+	min-height: 251px;  
+  }
+
+/*----- FOOTER -----*/
+
+} /*end media query tablet*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* DESKTOP */
+
+@media only screen and (min-width: 1141px) {
+  /*-----BODY -----*/
+	body {
+		background-color: #1ED7DB;
+		background-repeat: repeat-x;
+		background-position: top-center;
+		}
+
+/*-----WRAPPER -----*/
+	#wrapper {
+		padding: 50px 0 50px 0;
+}
+
+/*-----CONTAINER -----*/
+#container {
+	max-width: 1140px;
+	min-width: 320px;
+	border: solid #000 .5px;
+	box-shadow: 5px 4px 5px rgba(0,0,0,.5);
+	margin: 0 auto;
+}
+
+
+#content a:hover {
+  color: #fff;
+  -webkit-transition: ease-in-out 0.3s;
+  -moz-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+ #content a {
+color:#EC3333;
+padding: 1em;
+font-family: 'Oswald', sans-serif;
+background-color:#393939;
+}
+
+  /*-----HEADER -----*/
+  header {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+  }
+
+  header img.headerimage {
+	width:11%;
+}
+
+  /*--social icons--*/
+  header ul.icons {
+    float: right;
+    padding-right: 65px;
+  }
+
+  header ul.icons li {
+    float: left;
+    margin-top: 1em;
+    margin-left: .3em;
+  }
+
+  header ul.icons li a {
+    display: block;
+    opacity: 0.7;
+    -webkit-transition: ease 0.2s;
+    -moz-transition: ease 0.2s;
+    -o-transition: ease 0.2s;
+    transition: ease 0.2s;
+  }
+
+  header ul.icons li a:hover {
+    opacity: 1;
+  }
+
+  ul.gallery li a img {
+    float: left;
+    width: 100%;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+  }
+
+  ul.gallery li a:hover img {
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.3);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  
+  div.pokemondiv {
+	min-height: 251px;  
+  }
+  
+} /*end media query desktop*/
+
+@media only screen and (min-width: 1200px) {
+  /*----- FOOTER -----*/
+
+  footer {
+    width: 1200px;
+    margin: auto;
+    position: relative;
+  }
+
+
+
+  footer .left {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 0px;
+    height: 30px;
+    border-right: 30px solid black;
+    border-top: 30px solid transparent;
+  }
+
+  footer .right {
+    position: absolute;
+    top: -30px;
+    right: 0;
+    width: 0px;
+    height: 30px;
+    border-left: 30px solid black;
+    border-top: 30px solid transparent;
+  }
+} /*end media query desktop/footer only*/

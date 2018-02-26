@@ -1,0 +1,9 @@
+{
+  "firebase": "pokemon-c1a19",
+  "public": "build",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

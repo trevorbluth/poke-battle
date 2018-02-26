@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Pokémon Marvel Smackdown</title>
+
+  <!-- Stop lies and stop font enlargement-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!--- Google Fonts --->
+  <link href="http://fonts.googleapis.com/css?family=Oswald|Lato:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
+
+  <!---Jquery Reference--->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+  <!----- STYLE SHEETS ----->
+  <link href="css/app.min.css" rel="stylesheet">
+
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <![endif]-->
+
+<script>
+$(document).ready(function(){
+    $("#button").click(function(){
+        $("img.trainer").toggleClass("trainerslide"),
+		$("img.stan").toggleClass("stanslide"),
+		$('#pokeCharacters').fadeToggle(),
+		$('#marvelCharacters').fadeToggle(),
+		$('#text').fadeToggle();
+    });
+});
+</script>
+
+</head>
+<body>
+  <div id="wrapper">
+    <div id="container">
+
+      <header>
+
+        <hgroup>
+
+          <a href="http://www.marvel.com" target="_blank"><img src="images/hammer.png" alt="Thor's Hammer" class="headerimage"></a>
+          <a href="http://www.pokemon.com" target="_blank"><img src="images/pokeball.png" alt="pokeball" class="headerimage"></a>
+
+
+          <h1>Pokémon Marvel Smackdown</h1>
+          <h2>Gotta Catch 'em Heroes</h2>
+        </hgroup>
+        <div class="KeepOpen"></div>
+      </header>
+
+
+
+      <!-- page content here -->
+      <div id="content">
+
+    <div class="trainerdiv"><img id ="red" class="trainer" src="/images/red.png" alt="Pokemon Trainer"></div>
+	<div class="pokemondiv"><img class="pokemon-image" id="pokeCharacters" src="images/pokemon.png" alt = "pokemon" ></div>
+	<div class="avengerdiv"><img class="marvel-image" id="marvelCharacters" src="images/marvel.png" alt = "pokemon"></div>
+    <div class="standiv"><img class="stan" id="stan" src="/images/stan.jpg" alt="Stan Lee"></div>
+
+	<div class="textdiv" id="text">
+      <h3>Ash chose <span id="pokemonData"></span>, Stan Lee chose <span id="marvelData"></span></h3>
+      <h3><span id="winner"></span> won!</h3>
+    </div>
+
+	  <div id="buttonarea">
+   <input id="button" name="submit" value="Smackdown!" type="submit" class="button"/>
+   	</div>
+
+
+
+
+      </div><!-- end content -->
+    </div> <!-- end container -->
+
+
+    <footer>
+
+      <div class="left"></div>
+      <div class="right"></div>
+
+      <p>A UVU DGM 3670 Team Project built Spring 2016</p>
+
+      <a href="http://pokeapi.co/" target="_blank"><p>Data provided by Pokéapi. &copy; 2016 Paul Hallett</p></a>
+      <a href="http://developer.marvel.com/" target="_blank"><p>Data provided by Marvel. &copy; 2014 Marvel</p></a>
+      <!-- Marvel requires a backlink if we chose to integrate images, etc. See: http://developer.marvel.com/documentation/attribution You must link to Marvel whenever you show any information from the API beyond the title and small (100px width or smaller) thumbnail of an entity. pokeapi.com, on the otherhand, needs no authentication, and is fully open and available.-->
+
+      <p><strong>Thanks for letting us use your APIs</strong></p>
+
+    </footer>
+
+  </div> <!-- end wrapper -->
+  <script src="js/app.min.js"></script>
+  <script>
+  var myDataRef = new Firebase('https://blinding-heat-3803.firebaseio.com/');
+  </script>
+
+</body>
+</html>
